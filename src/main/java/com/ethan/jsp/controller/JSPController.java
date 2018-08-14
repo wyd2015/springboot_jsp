@@ -7,7 +7,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class JSPController {
 
     @GetMapping("/jsp")
-    public String getJsp(){
+    public String getJsp(int n){
+        int i = 1/n;
         return "index"; //返回的是jsp文件的文件名，不可带后缀
     }
 
